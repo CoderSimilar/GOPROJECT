@@ -1,12 +1,12 @@
 package main
 
 import (
-	"bufio"
+	// "bufio"
 	"fmt"
 	"math/rand"
-	"os"
+	//"os"
 	"strconv"
-	"strings"
+	//"strings"
 	"time"
 )
 
@@ -17,18 +17,19 @@ func main() {
 	fmt.Println(secretNumber)
 	fmt.Println("Hello,Welcome to play Gussing Number Game!")
 	fmt.Println("Please input your guess:")
-	reader := bufio.NewReader(os.Stdin)//从标准输入读取一个数字
+	reader := ""
+	fmt.Scanf(reader)//从标准输入读取一个数字
 	guessNum := 1
 	for
 	{
-		input, err := reader.ReadString('\n')//读入标准输入的换行符
-		if err != nil {
-			fmt.Println("An error occured while reading input. Please try again!")
-			continue
-		}
-		input = strings.Trim(input, "\r\n")//去除标准输入的换行符
-
-		guess, err := strconv.Atoi(input)//将读入的字符串转换成整数
+		// input, err := reader.ReadString('\n')//读入标准输入的换行符
+		// if err != nil {
+		// 	fmt.Println("An error occured while reading input. Please try again!")
+		// 	continue
+		// }
+		// input = strings.Trim(input, "\r\n")//去除标准输入的换行符
+		fmt.Scanf("%s", &reader)//从标准输入读取一个数字
+		guess, err := strconv.Atoi(reader)//将读入的字符串转换成整数
 		if err != nil {
 			fmt.Println("An error occured while reading input. Please try again!")
 			continue
