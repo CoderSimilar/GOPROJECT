@@ -1,0 +1,12 @@
+<h1 style='color : orange'>Hello, World!</h1>
+<h2>How are you?<h2>
+<img id = 'i1' src = 'https://th.bing.com/th/id/R.4ae2912af90e1c049c01bdf88a3cc982?rik=cOpeApfwZvgWMw&riu=http%3a%2f%2fp2.ifengimg.com%2fa%2f2018_25%2fa32404e1d0936c4_size256_w750_h930.jpg&ehk=8fhXCBUAswzzN976SgIahinEcwRB95liVyGuF3dxUqg%3d&risl=&pid=ImgRaw&r=0'>
+<button id = 'b1' > 点我 </button>
+
+<script>
+document.getElementById('b1').onclick = function() {
+    document.getElementById('i1').src = 'https://pic3.zhimg.com/80/v2-9ea2a0fc7eebe15d26c621d5e63d6301_qhd.jpg'
+}
+</script>
+
+

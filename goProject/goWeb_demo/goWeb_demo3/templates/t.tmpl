@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html long="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tmpl test</title>
+</head>
+
+<body>
+    <h1> 测试嵌套template语法 </h1>
+
+    {{/* 嵌套一个define定义的模板 */}}
+    <hr>
+    
+    {{ template "ul.tmpl" }}
+    
+    {{/* 嵌套另一个模板 */}}
+    <hr>
+    
+    {{ template "ol.tmpl" }}
+
+    <div> 你好，{{ . }} </div>
+
+</body>
+</html>
+
+{{/* 通过define定义一个模板 */}}
+
+{{ define "ol.tmpl" }}
+    <ol> 
+        <li>唱</li>
+        <li>跳</li>
+        <li>rap</li>
+    </ol>
+{{ end }}

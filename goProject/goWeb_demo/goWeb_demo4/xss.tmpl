@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+</head>
+<body>
+    {{/*不使用safe函数的话, 这里会转义成字符串输出*/}}
+    <!-- {{.}} -->
+    {{/*使用safe函数的话, 这里不会转义*/}}
+    {{. | safe}}
+</body>
+</html>
